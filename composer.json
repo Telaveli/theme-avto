@@ -1,16 +1,16 @@
 {
-    "name": "pagekit/theme-dolce",
+    "name": "pagekit/theme-avto",
     "type": "pagekit-theme",
-    "version": "1.0.0",
-    "title": "Dolce",
-    "description": "The fashion themed Dolce stands out with its framed style. It includes 6 totally different styles.",
+    "version": "0.0.1",
+    "title": "Avto",
+    "description": "თემა დაკოპირებულია  Dolce-დან. It includes 6 totally different styles.",
     "license": "MIT",
-    "copyright": "(c) 2016 Pagekit",
+    "copyright": "(c) 2017 Avto",
     "authors": [
         {
-            "name": "Pagekit",
-            "email": "info@pagekit.com",
-            "homepage": "http://pagekit.com"
+            "name": "Avto",
+            "email": "avto@telaveli.ge",
+            "homepage": "http://avto.telaveli.ge"
         }
     ],
     "extra": {
