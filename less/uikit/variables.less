@@ -16,7 +16,7 @@
 @global-alt-2-font-family:                      'BPG Mrgvlovani Caps 2010','Montserrat', Helvetica, Arial, sans-serif;
 @global-alt-3-font-family:                      'BPG Nino Elite Ultra Caps','Montserrat', Helvetica, Arial, sans-serif;
 
-@global-font-size:                              12px;
+@global-font-size:                              16px;
 @global-line-height:                            20px;
 @global-font-weight:                            400;
 @global-alt-1-font-weight:                      400;
@@ -30,12 +30,12 @@
 @global-alt-2-text-transform:                   @global-text-transform;
 @global-alt-2-letter-spacing:                   @global-letter-spacing;
 @global-alt-3-text-transform:                   @global-text-transform;
-@global-alt-3-letter-spacing:                   6px;
+@global-alt-3-letter-spacing:                   6px@global-letter-spacing;
 @global-h1-font-size:                           24px;
 @global-h1-line-height:                         26px;
 @global-h3-font-size:                           18px;
 @global-h3-line-height:                         21px;
-@global-ui-font-size:                           12px;
+@global-ui-font-size:                           16px;
 
 @global-theme-icon-font-family:                 'theme-icons';
 
@@ -55,11 +55,11 @@
 @global-border:                                 fade(@global-highlight-color, 10%);
 @global-hover-border:                           fade(@global-highlight-color, 15%);
 
-@global-color:                                  #6D6D77;
-@global-muted-color:                            #BBBBC3;
+@global-color:                                  #38441c;
+@global-muted-color:                            fade(@global-color, 50%);
 @global-highlight-color:                        #232331;
 
-@global-link-color:                             #EDC64A;
+@global-link-color:                             #f2223a;
 @global-link-hover-color:                       @global-highlight-color;
 @global-link-text-decoration:                   underline;
 @global-link-hover-text-decoration:             line-through;
@@ -70,7 +70,7 @@
 // Primary
 //
 
-@global-primary-background:                     #EDC64A;
+@global-primary-background:                     #8d7e0b;
 @global-primary-hover-background:               desaturate(darken(@global-primary-background, 4%), 5%);
 @global-primary-active-background:              desaturate(darken(@global-primary-background, 12%), 8%);
 @global-primary-shadow:                         rgba(139,90,0,1);
@@ -88,15 +88,15 @@
 // Secondary
 //
 
-@global-secondary-background:                   #181822;
+@global-secondary-background:                   #497dc6;
 @global-secondary-hover-background:             desaturate(lighten(@global-secondary-background, 3%), 3%);
 @global-secondary-active-background:            saturate(darken(@global-secondary-background, 4%), 3%);
 @global-secondary-shadow:                       rgba(13,13,18,1);
-@global-secondary-contrast-background:          #2A2A36;
+@global-secondary-contrast-background:          #faf34d;
 @global-secondary-border:                       fade(@global-secondary-highlight-color, 6%);
 @global-secondary-hover-border:                 fade(@global-secondary-highlight-color, 12%);
 
-@global-secondary-color:                        #858A9D;
+@global-secondary-color:                        #497dc6;
 @global-secondary-muted-color:                  fade(@global-secondary-color, 50%);
 @global-secondary-highlight-color:              #F2F3FF;
 @global-secondary-link-color:                   @global-link-color;

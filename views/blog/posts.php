@@ -4,14 +4,24 @@
 <article class="uk-article tm-article-blog">
 
     <?php if ($image = $post->get('image.src')): ?>
-    <div class="uk-grid uk-grid-xlarge uk-grid-width-medium-1-2" data-uk-grid-match="{target:'.uk-panel'}">
+    <div class="uk-grid uk-grid-xlarge uk-grid-width-medium" data-uk-grid-match="{target:'.uk-panel'}">
+      <div class=" uk-width-medium-1-4">
+          <div class="uk-panel tm-article-image" style="background: url('<?= $view->url($image) ?>') no-repeat; ">
+              <a class="" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
+                  <img class="uk-invisible" src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>">
 
-        <div class="uk-flex uk-flex-center uk-flex-middle">
+              </a>
+              <p class="uk-article-meta">
+                  <?= __('Written by %name% on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
+              </p>
+          </div>
+
+      </div>
+
+        <div class="uk-flex uk-flex-center uk-flex-middle uk-width-medium-3-4">
             <div class="uk-panel">
 
-                <p class="uk-article-meta">
-                    <?= __('Written by %name% on %date%', ['%name%' => $post->user->name, '%date%' => '<time datetime="'.$post->date->format(\DateTime::W3C).'" v-cloak>{{ "'.$post->date->format(\DateTime::W3C).'" | date "longDate" }}</time>' ]) ?>
-                </p>
+
 
                 <h1 class="uk-article-title">
                     <a href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
@@ -36,14 +46,7 @@
             </div>
         </div>
 
-        <div>
-            <div class="uk-panel tm-article-image" style="background: url('<?= $view->url($image) ?>') #FFF 50% 50% no-repeat; background-size: cover;">
-                <a class="uk-position-cover" href="<?= $view->url('@blog/id', ['id' => $post->id]) ?>">
-                    <img class="uk-invisible" src="<?= $image ?>" alt="<?= $post->get('image.alt') ?>">
 
-                </a>
-            </div>
-        </div>
 
     </div>
 

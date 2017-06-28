@@ -890,7 +890,9 @@ html { overflow-y: scroll; }
 
 // Blog Extension
 // ==========================================================================
-
+.tm-article-blog {
+img { &:extend(.uk-responsive-height all); }
+}
 // Spacing to each other
 .tm-article-blog + .tm-article-blog {
     margin-top: @global-margin-large;
